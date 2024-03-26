@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@200;300&display=swap');
+        h1{
+            text-align: center;
+            color: darkgreen;
+        }
+        body{
+            font-family:'Poppins', sans-serif;
+            font-weight: 500;
+        }
+        .submit{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body bgcolor="wheat">
+    <h1> Personal Form </h1>
+    <form action="">
+        <label for="">username</label>
+        <input type="text" name="username" size="15" maxlength="30" required="required" placeholder="username"><br><br>
+        <label for="">password</label>
+        <input type="password" name="password" size="15" maxlength="30" required="required"placeholder="*****"><br><br>
+        
+        <label for="">what do you think about us</label><br>
+        <textarea name="comments" id="" cols="30" 
+        rows="10" placeholder="enter your comment"></textarea><br>
+        <label for="">please select favorite genre :</label>
+        <input type="radio" name="genre" value="rock" checked/>rock
+        <input type="radio" name="genre" value="pop">pop
+        <input type="radio" name="genre" value="jazz">jazz <br><br>
+
+        <label for="">please select favorite music services :</label>
+        <input type="checkbox" name="service" value="rock" checked/>ITunes
+        <input type="checkbox" name="service" value="pop">Last.Fm
+        <input type="checkbox" name="service" value="jazz">Spotify <br><br>
+
+        <label for="">what device do you listen to music on? :</label>
+        <select name="devices" id="">
+            <option value="">Ipod</option>
+            <option value="">Radio</option>
+            <option value="">Computer</option><br><br>
+        </select>
+        
+        <label for="">Do you want to play any of the following instruments? (you can sleect more than one option by holding doewn control or a PC or a command key on a Mac while selecting different option)</label><br><br>
+        <select name="instruments" id="" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">guitar</option>
+            <option value="drums" selected="selected">drums</option>
+            <option value="keyboard" selected="selected">keyboard</option>
+            <option value="bass" selected="selected">bass</option>
+        </select><br><br>
+
+        <label for="">upload your song in MP3 format :</label>
+        <input type="file" name="user-song"><br><br>
+        <label for="">upload your file</label>
+        <input class="submit" type="submit" value="upload"><br><br>
+
+        <label for="">Subscribe to our email</label>
+        <input type="text" name="email">
+        <input type="submit" name="Subscribe" value="Subscribe">
+
+        <fieldset>
+            <legend>contact details</legend>
+            <label for="">email :</label>
+            <input type="text" name="email"><br><br>
+            <label for="">mobile :</label>
+            <input type="text" name="mobile"><br><br>
+            <label for="">telephone :</label>
+            <input type="text" name="telephone">
+        </fieldset><br>
+
+        <label for="username">departure date</label>
+        <input type="date" name="depart"><br>
+        <input class="submit" type="submit">
+    </form>
+</body>
+</html>
